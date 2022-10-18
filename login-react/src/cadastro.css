@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #121214;
+    font-family: 'Inter', sans-serif;
+    
+  }
+
+  .header-login img{
+    width: 100px;
+  }
+  .header-login h1 {
+  color: #E1E1E6;
+  font-size: 30px;
+  font-weight: 700; 
+  }
+  .header-login p {
+  color: #E1E1E6;
+  font-size: 14px;
+  font-weight: 600;
+  
+  }
+  .header-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  gap: 10px;
+  }
+  
+  .formInput input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 47px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #7c7c8a;
+    color: #7c7c8a;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .formInput input:focus {
+    border-bottom: solid 2px #61DAFB;
+    outline: none; 
+  }
+  .input:focus + .focusInput::after{
+    margin-top: -120px;
+  }
+  .values  + .focusInput::after{
+    margin-top: -120px;
+  }
+  .focusInput::after{
+    content: attr(data-placeholder);
+    color: #7c7c8a;
+    display: flex;
+    flex-direction: column;
+    margin: -80px 60px 12px;
+    position: absolute;
+    transition: all 0.4s ;
+  }
+  
+  .values + .focusInput::after{
+    margin-top: -120px;
+  }
+  
+  .form-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -25px 0 10px;
+  }
+  .btn-login{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61DAFB;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .btn-login:hover{
+    background-color: #A5E3F3;
+  }
+  .ancoras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    
+  }
+  .ancoras a{
+    color: #E1E1E6;
+    font-weight: 200;
+  }
+  
+  
